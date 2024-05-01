@@ -9,7 +9,7 @@ def secret_code():
     code = input("enter the 9 letter secret code encode: ")
     if len(code) > 4 :
             
-        first = code[0:-8]
+        first = code[0:-8] 
         last = code[1:10]
         total =  last + first
         nak = "anjdbsine"
@@ -21,21 +21,21 @@ def secret_code():
         
 
     else:
-        mouth = code[::-1]
+        mouth = code[::-1] 
         print(mouth)
 
 
 def to_decode():
 
 
-# secret code = "Antidisestablish"
+# secret code = "Anti"
     
     to_decode = input("enter the secret code ").lower()
     if to_decode == "anti":
         print("you have successfully passed")
         ab = input("enter the code to decode")
-        nam = ab[6:-6]
-        op = nam[8:] + nam[:-1]
+        nam = ab[6:-6] #removes first 6 and last 6 character
+        op = nam[8:] + nam[:-1] # add the last 1 and first 8 character 
         
 
         
